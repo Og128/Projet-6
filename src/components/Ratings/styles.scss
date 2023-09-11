@@ -1,0 +1,11 @@
+.container-ratings{
+    display: flex;
+    gap:10px;
+    margin: 20px;
+    @media (max-width:599px) {
+        margin: auto 0px;
+        & svg{
+            width: 13px;
+        }
+    }
+}

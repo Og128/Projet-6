@@ -1,0 +1,19 @@
+@import '../../styles/variables.scss';
+
+.tags {
+    width: fit-content;
+    display: flex;
+    list-style: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: $primary-color;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    align-items: center;
+    
+    @media (max-width:599px) {
+        font-size: 10px;
+    }
+}

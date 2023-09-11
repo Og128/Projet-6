@@ -1,0 +1,48 @@
+@import '../../styles/variables.scss';
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 45px;
+
+    @media (max-width:599px) {
+        padding:0;
+        padding-bottom: 20px;
+    }
+
+    .navimg {
+        min-width: 210px;
+        height: 68px;
+
+        @media (max-width: 599px) {
+            margin: auto;
+            margin-left: 0;
+            min-width: 145px;
+            height: 47px;
+        }
+    }
+
+    .navbar-link {
+        display: flex;
+        gap: 57px;
+
+        @media (max-width: 599px) {
+            gap: 26px;
+            align-items: center;
+            padding-left: 0;
+        }
+
+        .navlink {
+            font-size: $primary-font-size;
+            color: $primary-color;
+            text-decoration: none;
+            font-weight: 500;
+            @media (max-width: 599px) {
+                font-size: 12px;
+            }
+        }
+        a.active{
+            text-decoration: underline;
+    }
+    }
+}

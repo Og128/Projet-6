@@ -1,0 +1,29 @@
+@import '../../styles/variables.scss';
+
+
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 340px));
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    margin: 40px;
+    padding: 40px ;
+    gap: 60px;
+    justify-content: center;
+    @media (max-width:599px) {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        gap: 20px;
+    }
+    .card-link{
+        min-width: 340px;
+        
+        @media (max-width:599px) {
+            min-width: 280px;
+        }
+    }
+}

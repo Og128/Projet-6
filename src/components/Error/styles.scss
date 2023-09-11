@@ -1,0 +1,44 @@
+@import '../../styles/variables.scss';
+
+.error {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .num-error {
+        color: $primary-color;
+        font-family: $font-stack;
+        font-size: 288px;
+        font-weight: 700;
+        margin: 0px;
+        @media (max-width:599px) {
+            font-size: 96px;
+            margin: 110px 0px;
+        }
+    }
+
+    .msg-error {
+        color: $primary-color;
+        font-family: $font-stack;
+        font-size: 36px;
+        font-weight: 500;
+        margin:0px;
+        margin-top:140px;
+        @media (max-width:599px) {
+            font-size: 18px;
+            margin: 0 25px;
+        }
+    }
+
+    .return-link {
+        color: $primary-color;
+        font-family: $font-stack;
+        font-size: 18px;
+        font-weight: 500;
+        margin:140px;
+        @media (max-width:599px) {
+            font-size: 14px;
+            margin: 110px;
+        }
+    }
+}

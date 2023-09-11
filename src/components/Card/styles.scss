@@ -1,0 +1,52 @@
+@import '../../styles/variables.scss';
+
+
+.card {
+    position: relative;
+
+    &::after {
+        position: absolute;
+        border-radius: 10px;
+        content: "";
+        height: 98.5%;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%);
+    }
+
+
+    .cover-img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        border-radius: 10px;
+        object-fit: cover;
+
+        @media (max-width:599px) {
+            aspect-ratio: 0;
+            height: 255px;
+        }
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+        font-weight: 500;
+        width: 80%;
+        color: #fff;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 20px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        z-index: 10;
+
+        @media (max-width:599px) {
+            font-size: 18px;
+            width: 60%;
+        }
+    }
+}

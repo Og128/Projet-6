@@ -1,0 +1,94 @@
+@import '../../styles/variables.scss';
+
+.dropdown {
+    width: 80%;
+    max-width: 1024px;
+    border-radius: 5px;
+    @media (max-width:599px) {
+        width: 100%;
+    }
+
+    .dropdown-title-btn {
+        border-radius: 5px;
+        background-color: $primary-color;
+        display: flex;
+        justify-content: space-between;
+        @media (max-width:599px) {
+            height: 30px;
+        }
+
+        .dropdown-title {
+            text-align: start;
+            padding: 10px 15px;
+            color: white;
+            margin: auto 0;
+            font-size: 18px;
+            font-weight: 500;
+            @media (max-width:599px) {
+                margin-left:10px;
+                padding:0;
+                font-size: 13px;
+            }
+        }
+
+        .dropdown-button {
+            margin: 10px 20px;
+            color: white;
+            transform: rotateZ(180deg);
+            @media (max-width:599px) {
+                margin:auto;
+                margin-right:10px;
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+
+    .dropdown-text {
+        border-radius: 5px 5px 10px 10px;
+        background: #f6f6f6;
+        span {
+            display: block;
+            color: $primary-color;
+            font-size: 18px;
+            max-height: 0;
+            margin: 0;
+            @media (max-width:599px) {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .dropdown-text.active {
+        padding: 10px;
+        span {
+            display: block;
+            opacity: 1;
+            max-height: 500px;
+            transition: 500ms cubic-bezier(.76,.05,.86,.06);
+        }
+    }
+
+    .dropdown-text.inactive {
+        opacity: 0;
+        transition: 500ms cubic-bezier(1,-0.01,.87,.97);
+        padding: 0px;
+        span{
+            display: block;
+            opacity: 0;
+            max-height: 0;
+            transition: 500ms ease-out;
+        }
+       
+    }
+
+    .dropdown-button.active {
+        transform: rotateZ(0deg);
+        transition: 500ms;
+    }
+
+    .dropdown-button.inactive {
+        transform: rotateZ(180deg);
+        transition: 500ms;
+    }
+}
