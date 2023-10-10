@@ -12,11 +12,11 @@ root.render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path='/' element={<App />} />
-        <Route path="/home" element={<App />} />
-        <Route path="/about" element={<About />} />
-        <Route path='/logement/:id'element={<Logement />} />
-        <Route path="/*" element={<Error />} />
+        <Route path='/Projet_6_ReactJs' element={<App />} />
+        <Route path="/Projet_6_ReactJs/home" element={<App />} />
+        <Route path="/Projet_6_ReactJs/about" element={<About />} />
+        <Route path='/Projet_6_ReactJs/logement/:id'element={<Logement />} />
+        <Route path="/Projet_6_ReactJs/*" element={<Error />} />
       </Routes>
     </Router>
   </React.StrictMode>,
