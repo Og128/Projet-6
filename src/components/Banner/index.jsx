@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 
 function Banner() {
   const path = useLocation().pathname;
-  const location = path.split("/Projet_6_ReactJs/")[1];
+  const location = path.split("/")[1];
  
   return (
     <div className="banner">
