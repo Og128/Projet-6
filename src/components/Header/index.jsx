@@ -7,12 +7,12 @@ function Header() {
     return (
         <>
             <nav className='navbar'>
-                <Link to="/Projet_6_ReactJs/home">
+                <Link to="/home">
                     <img className="navimg" src={Logo} alt="logo Kasa" />
                 </Link>
                 <ul className='navbar-link'>
-                    <NavLink className="navlink" to="/Projet_6_ReactJs/home">Accueil </NavLink>
-                    <NavLink className="navlink" to="/Projet_6_ReactJs/about">A Propos </NavLink>
+                    <NavLink className="navlink" to="/home">Accueil </NavLink>
+                    <NavLink className="navlink" to="/about">A Propos </NavLink>
                 </ul>
             </nav>
         </>

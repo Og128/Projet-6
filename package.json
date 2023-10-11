@@ -2,7 +2,7 @@
   "name": "my-project-6",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://og128.github.io/Projet_6_ReactJs",
+  "homepage": ".",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",

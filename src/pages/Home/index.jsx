@@ -15,7 +15,7 @@ function App() {
         <div className="cards-container">
           {datalogement.map((data) => {
             return (
-              <a className="card-link" href={`/Projet_6_ReactJs/logement/${data.id}`} key={data.id}>
+              <a className="card-link" href={`/logement/${data.id}`} key={data.id}>
                 <Cards
                    data={data} />
               </a>
