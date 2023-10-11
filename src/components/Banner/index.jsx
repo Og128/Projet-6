@@ -7,7 +7,7 @@ function Banner() {
  
   return (
     <div className="banner">
-      <div className={`background-banner ${location === '' || '/' ? 'home' : location}`} >
+      <div className={`background-banner ${location === '' ? 'home' : location}`} >
         <h1 className="title-banner">Chez vous, partout et ailleurs</h1>
       </div>
     </div>
